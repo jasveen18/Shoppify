@@ -1,0 +1,30 @@
+{
+  "name": "spoppify",
+  "version": "1.0.0",
+  "description": "a mern stack e-commerce app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build",
+    "heroku-postbuild": "npm run client-install && npm run client-build"
+  },
+  "author": "jasveen singh kohli",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "formidable": "^2.0.1",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  }
+}
